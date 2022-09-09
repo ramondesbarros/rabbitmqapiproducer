@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  rabbitmq:
+    request:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+      exchenge:
+        producer: ex.rabbitmq.api-producer
+      routing-key:
+        producer: rk.rabbitmq.api-producer
+      dead-letter:
+        producer: dl.rabbitmq.api-producer
+      parking-lot:
+        producer: pl.rabbitmq.api-producer

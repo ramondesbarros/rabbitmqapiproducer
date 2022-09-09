@@ -1,19 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com.rabbitmqapiproducer</groupId>
-  <artifactId>rabbitmqapiproducer</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>rabbitmqapiproducer</name>
-  
-  	<parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.rabbitmqapiproducer</groupId>
+	<artifactId>rabbitmqapiproducer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>rabbitmqapiproducer</name>
+
+	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.5.2</version>
-	<relativePath />
+		<relativePath />
 	</parent>
-  
-  	<dependencies>
-		<!-- SPRING FRAMEWORK -->
+
+	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -30,13 +32,11 @@
 			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 
-		<!-- JACKSON -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
 			<artifactId>jackson-datatype-jsr310</artifactId>
 		</dependency>
 
-		<!-- TEST -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -54,8 +54,8 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
-		<build>
+
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -63,8 +63,8 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-		<repositories>
+
+	<repositories>
 		<repository>
 			<id>spring-releases</id>
 			<name>Spring Releases</name>
@@ -79,5 +79,5 @@
 			<url>https://repo.spring.io/libs-release</url>
 		</pluginRepository>
 	</pluginRepositories>
-  
+
 </project>
